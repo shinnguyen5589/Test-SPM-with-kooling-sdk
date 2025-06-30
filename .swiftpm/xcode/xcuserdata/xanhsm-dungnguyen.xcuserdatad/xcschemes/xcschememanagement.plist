@@ -22,6 +22,16 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>TestSPM</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TestSPMTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
