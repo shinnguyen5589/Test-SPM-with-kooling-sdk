@@ -21,14 +21,14 @@ let package = Package(
         .target(
             name: "Test-SPM-with-kooling-sdk",
             dependencies: [
-                "Alamofire"
-            ]
-        ),
+                .target(name: "Test"),
+                .product(name: "Alamofire", package: "Alamofire"),
+            ]),
         .testTarget(
-            name: "Test-SPM-with-kooling-sdkTests",
+            name: "TestSPMTests",
             dependencies: ["Test-SPM-with-kooling-sdk"]),
         .binaryTarget(
-            name: "Test-SPM-with-kooling-sdk",
+            name: "kooling_sdk_sample",
             path: "./Sources/kooling_sdk_sample.xcframework")
     ]
 )
