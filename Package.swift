@@ -21,7 +21,7 @@ let package = Package(
         .target(
             name: "TestSPM",
             dependencies: [
-                .product(name: "Alamofire", package: "Alamofire"),
+                // .product(name: "Alamofire", package: "Alamofire"),
                 .target(name: "kooling_sdk_sample"),
             ]),
         .testTarget(
